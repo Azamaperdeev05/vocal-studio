@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vocal-studio"
+version = "0.1.0"
+description = "AI Vocal Isolation, Automatic Onset Trimming & Studio Reverb Processor for YouTube and Audio Files"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Azamat", email = "azamaperdeev05@users.noreply.github.com" }
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "demucs>=4.0.0",
+    "pedalboard>=0.8.0",
+    "yt-dlp>=2024.0.0",
+    "soundfile>=0.12.0",
+    "numpy>=1.22.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+vocal-studio = "vocal_studio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vocal_studio*"]

@@ -1,0 +1,57 @@
+# Audio Files (do not commit large audio assets)
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.aac
+*.webm
+*.opus
+
+# Demucs and model checkpoints
+separated/
+*.safetensors
+*.th
+*.pt
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific temporary files
+test_*.wav
+clip_*.wav
+input_song.wav

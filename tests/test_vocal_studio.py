@@ -34,3 +34,4 @@ def test_apply_studio_reverb():
     assert reverb_audio.shape[1] == stereo_audio.shape[1]
     peak = np.max(np.abs(reverb_audio))
     assert peak <= 1.0
+

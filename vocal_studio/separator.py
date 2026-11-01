@@ -38,3 +38,4 @@ def separate_vocals(
         raise FileNotFoundError(f"Demucs did not produce vocals at {vocals_path}")
         
     return str(vocals_path), str(no_vocals_path)
+

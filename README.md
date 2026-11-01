@@ -89,3 +89,4 @@ print("Шығарылған файлдар:", result['tracks'])
 
 ## Лицензия / License
 MIT License. Авторлық құқық (c) 2026 Azamat.
+

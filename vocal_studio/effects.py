@@ -44,3 +44,4 @@ def apply_studio_reverb(
     
     processed = board(audio_data, sample_rate)
     return normalize_audio(processed, target_db=config.peak_target_db)
+

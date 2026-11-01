@@ -44,3 +44,4 @@ vocal-studio = "vocal_studio.cli:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["vocal_studio*"]
+

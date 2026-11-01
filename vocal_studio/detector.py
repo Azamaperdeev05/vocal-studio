@@ -68,3 +68,4 @@ def detect_vocal_start(
     start_sec = vocal_start_idx / sample_rate
     
     return vocal_start_idx, start_sec
+

@@ -37,3 +37,4 @@ class VocalStudioConfig:
     export_wav: bool = True
     mp3_bitrate: str = "320k"
     export_backing_mix: bool = True
+
